@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Grid Info</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    h1 {
+      text-align: auto;
+      padding: 2px;
+      color: black;
+      margin: 0;
+      font-size: small;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 220px;
+      gap: 10px;
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+      background-color: #e0e0e0;
+    }
+
+    .grid-container > div {
+      background-color: #ffffff;
+      color: #000;
+      padding: 10px;
+      font-size: 16px;
+      text-align: center;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .grid-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .cast-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    .cast-table th, .cast-table td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+
+    .cast-table th {
+      background-color: #f0f0f0;
+    }
+
+    .cast-table td:nth-child(1) {
+      font-weight: bold;
+      color: #0077cc;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Movie Info Grid</h1>
+
+  <div class="grid-container">
+    <!-- 1: Image -->
+    <div>
+      <img src="https://m.media-amazon.com/images/I/81ExhpBEbHL._AC_SY679_.jpg" alt="Avengers">
+    </div>
+
+    <!-- 2: Title -->
+    <div>
+        <strong>Title:</strong><br>Avengers
+    </div>
+
+    <!-- 3: Genre -->
+    <div>
+      <strong>Genre:</strong><br>Action, Sci-Fi
+    </div>
+
+    <!-- 4: Cast Table Part 1 -->
+    <div>
+      <strong>Cast:</strong><br>
+      <table class="cast-table">
+        <tr>
+          <th>Character</th>
+          <th>Actor</th>
+        </tr>
+        <tr>
+          <td>Steve Rogers<br><small>Captain America</small></td>
+          <td>Chris Evans</td>
+        </tr>
+        <tr>
+          <td>Tony Stark<br><small>Iron Man</small></td>
+          <td>Robert Downey Jr.</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- 5: Director -->
+    <div>
+      <strong>Director:</strong><br>Joss Whedon
+    </div>
+
+    <!-- 6: Release -->
+    <div>
+      <strong>Release Year:</strong><br>2012
+    </div>
+
+    <!-- 7: Cast Table Part 2 -->
+    <div>
+      <table class="cast-table">
+        <tr>
+          <th>Character</th>
+          <th>Actor</th>
+        </tr>
+        <tr>
+          <td>Natasha Romanoff<br><small>Black Widow</small></td>
+          <td>Scarlett Johansson</td>
+        </tr>
+        <tr>
+          <td>Bruce Banner<br><small>The Hulk</small></td>
+          <td>Mark Ruffalo</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- 8: Summary -->
+    <div>
+      <strong>Summary:</strong><br>
+      Earth's mightiest heroes unite to battle the powerful Loki and his alien army to save the world.
+    </div>
+  </div>
+
+</body>
+</html>
