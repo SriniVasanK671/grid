@@ -12,11 +12,11 @@
     }
 
     h1 {
-      text-align: auto;
-      padding: 2px;
-      color: black;
+      text-align: center;
+      padding: 20px;
+      background-color: #0077cc;
+      color: white;
       margin: 0;
-      font-size: small;
     }
 
     .grid-container {
@@ -71,6 +71,12 @@
       color: #0077cc;
     }
 
+   
+    .item1 { grid-column: 1 / 2; }             
+    .item2-3 { grid-column: 2 / 4; }           
+    .item4-7 { grid-column: 1 / 3; }           
+    .item5-6 { grid-column: 3 / 4; }           
+    .item8 { grid-column: 1 / 4; }            
   </style>
 </head>
 <body>
@@ -78,23 +84,19 @@
   <h1>Movie Info Grid</h1>
 
   <div class="grid-container">
-    <!-- 1: Image -->
-    <div>
+  
+    <div class="item1">
       <img src="https://m.media-amazon.com/images/I/81ExhpBEbHL._AC_SY679_.jpg" alt="Avengers">
     </div>
 
-    <!-- 2: Title -->
-    <div>
-        <strong>Title:</strong><br>Avengers
+   
+    <div class="item2-3">
+      <p><strong>Title:</strong> Avengers</p>
+      <p><strong>Genre:</strong> Action, Sci-Fi</p>
     </div>
 
-    <!-- 3: Genre -->
-    <div>
-      <strong>Genre:</strong><br>Action, Sci-Fi
-    </div>
-
-    <!-- 4: Cast Table Part 1 -->
-    <div>
+   
+    <div class="item4-7">
       <strong>Cast:</strong><br>
       <table class="cast-table">
         <tr>
@@ -109,26 +111,6 @@
           <td>Tony Stark<br><small>Iron Man</small></td>
           <td>Robert Downey Jr.</td>
         </tr>
-      </table>
-    </div>
-
-    <!-- 5: Director -->
-    <div>
-      <strong>Director:</strong><br>Joss Whedon
-    </div>
-
-    <!-- 6: Release -->
-    <div>
-      <strong>Release Year:</strong><br>2012
-    </div>
-
-    <!-- 7: Cast Table Part 2 -->
-    <div>
-      <table class="cast-table">
-        <tr>
-          <th>Character</th>
-          <th>Actor</th>
-        </tr>
         <tr>
           <td>Natasha Romanoff<br><small>Black Widow</small></td>
           <td>Scarlett Johansson</td>
@@ -140,8 +122,14 @@
       </table>
     </div>
 
-    <!-- 8: Summary -->
-    <div>
+   
+    <div class="item5-6">
+      <p><strong>Director:</strong> Joss Whedon</p>
+      <p><strong>Release Year:</strong> 2012</p>
+    </div>
+
+   
+    <div class="item8">
       <strong>Summary:</strong><br>
       Earth's mightiest heroes unite to battle the powerful Loki and his alien army to save the world.
     </div>
